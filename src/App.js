@@ -1,9 +1,16 @@
 import "./App.css";
+import Header from "./components/Layout/Header";
+import Meals from "./components/Meals/Meals";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   return (
     <div className="App">
-      <h2>Hello World!</h2>
+      <Cart />
+      <Header />
+      <main>
+        <Meals />
+      </main>
     </div>
   );
 }
