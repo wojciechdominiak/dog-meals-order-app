@@ -4,13 +4,13 @@ import styles from "./Header.module.css";
 
 import dogMeals from "../../assets/dogmeals.jpg";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <div className={styles.wrapper}>
         <header className={styles.header}>
           <h1>DogMeals</h1>
-          <HeaderCartButton />
+          <HeaderCartButton onShowCart={props.onShowCart} />
         </header>
       </div>
       <div className={styles["main-image"]}>
