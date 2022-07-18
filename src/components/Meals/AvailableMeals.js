@@ -13,7 +13,7 @@ const AvaliableMeals = () => {
     setIsLoading(true);
     setError(null);
     const response = await fetch(
-      "https://task-e1453-default-rtdb.firebaseio.com/meals"
+      "https://task-e1453-default-rtdb.firebaseio.com/meals.json"
     );
 
     if (!response.ok) {
